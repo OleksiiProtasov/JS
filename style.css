@@ -1,0 +1,31 @@
+.plato{
+    border: 3px rgb(226, 43, 43) solid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+
+.box{
+    
+    background-color: blueviolet;
+    
+    width: 500px;
+    height: 500px;
+    
+    animation: spin;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes spin{
+    0%{
+        transform:perspective(400px) rotateX(90deg);
+        
+    }
+    100%{
+        transform:perspective(400px) rotateX(0deg);
+    }
+}
